@@ -1,0 +1,2 @@
+train : ./dataset/train.csv
+test : ./dataset/test.csv

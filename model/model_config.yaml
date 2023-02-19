@@ -1,0 +1,35 @@
+layer_1 :
+    Linear :
+        in_features : 5
+        out_features: 10
+
+    BatchNorm1d :
+        num_features : 10
+
+    Dropout :
+        p : 0.5
+
+    LeakyReLU :
+        negative_slope : 0.1
+
+layer_2 :
+    Linear :
+        in_features : 10
+        out_features: 10
+
+    BatchNorm1d :
+        num_features : 10
+
+    Dropout :
+        p : 0.5
+
+    LeakyReLU :
+        negative_slope : 0.1
+
+regression_layer :
+    Linear :
+        in_features : 10
+        out_features: 1
+
+    LeakyReLU :
+        negative_slope : 0.1
